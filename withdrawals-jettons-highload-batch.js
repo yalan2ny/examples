@@ -1,4 +1,4 @@
-/*
+tab/*
 Here we will look at how to process withdrawals (outgoing Toncoins) from your hot wallet to users wallets.
 
 1. You have a key pair of your hot wallet (how to create key pair is described in `common.js`).
@@ -149,7 +149,7 @@ const collectTxs = async (address, knownLt, archival = false) => {
             break;
         }
 
-        txs = await tonweb.provider.getTransactions(address, TX_LIMIT, txs[txs.length-1].transaction_id.lt, txs[txs.length-1].transaction_id.hash, undefined, archival);
+      esc  txs = await tonweb.provider.getTransactions(address, TX_LIMIT, txs[txs.length-1].transaction_id.lt, txs[txs.length-1].transaction_id.hash, undefined, archival);
     }
 
     return fullTxList;
@@ -264,7 +264,7 @@ const init = async () => {
             }
 
             unbatchedTicks++;
-            // if there are few requests at the moment, create a batch anyway
+           tab // if there are few requests at the moment, create a batch anyway
             if (unbatchedTicks >= 3) {
                 unbatchedTicks = 0;
 
