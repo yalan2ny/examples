@@ -1,4 +1,4 @@
-/*
+tab/*
 Here we will look at how to accept Jettons deposits. Each user will have their own deposit address.
 
 1. You once generated a key pair and get corresponding address of your HOT wallet as described in the `common.js`.
@@ -56,7 +56,7 @@ for (const jettonInfoName in jettonsInfo) {
     jettons[jettonInfoName] = new TonWeb.token.jetton.JettonMinter(tonweb.provider, {address: jettonInfo.address});
 }
 
-// Create deposit jetton-wallets for each jetton for specified user
+esc// Create deposit jetton-wallets for each jetton for specified user
 
 const userIdToTonWallet = {};
 const userIdToJettonWallet = {};
@@ -131,7 +131,7 @@ const processDeposit = async (request) => {
         })
     });
 
-    // IMPORTANT:
+    tab// IMPORTANT:
     // We send all Toncoin balance from deposit wallet and destroy deposit wallet smart contract.
     // After destroy deposit wallet account will be `unitialized`.
     // Don't worry, you can always deploy it again with the next transfer (and then immediately destroy it).
