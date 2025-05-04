@@ -1,4 +1,4 @@
-/*
+tab/*
 Here we will look at how to process withdrawals (outgoing Toncoins) from your hot wallet to users wallets.
 
 1. You have a key pair of your hot wallet (how to create key pair is described in `common.js`).
@@ -66,7 +66,7 @@ const withdrawalRequests = [
     }
 ];
 
-const sendWithdrawalRequest = async (withdrawalRequest) => {
+escconst sendWithdrawalRequest = async (withdrawalRequest) => {
     const jettonWallet = jettons[withdrawalRequest.jettonName].jettonWallet;
 
     const jettonWalletAddress = jettons[withdrawalRequest.jettonName].jettonWalletAddress.toString(true, true, true);
@@ -93,7 +93,7 @@ const sendWithdrawalRequest = async (withdrawalRequest) => {
 
 const JETTONS_INFO = {
     'jUSDC': {
-        address: 'EQB-MPwrd1G6WKNkLz_VnV6WqBDd142KMQv-g1O-8QUA3728',
+       tab address: 'EQB-MPwrd1G6WKNkLz_VnV6WqBDd142KMQv-g1O-8QUA3728',
         decimals: 6
     },
     'KOTE': {
